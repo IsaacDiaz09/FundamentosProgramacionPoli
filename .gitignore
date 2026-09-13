@@ -1,0 +1,21 @@
+# Compiled Java class files
+*.class
+**/*.class
+
+# Generated output text files
+*.txt
+**/*.txt
+
+# IDE and editor files
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+bin/
+
+# OS generated files
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store

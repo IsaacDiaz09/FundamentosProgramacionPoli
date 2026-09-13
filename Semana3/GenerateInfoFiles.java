@@ -167,13 +167,12 @@ public class GenerateInfoFiles {
                         ? PRODUCT_NAMES[i] 
                         : "Producto Tecnologico " + (i + 1);
 
-                // Generar precio unitario escalonado de forma coherente
+                // Generar precio unitario escalonado de forma coherente (redondeado a miles)
                 double rawPrice = MIN_PRODUCT_PRICE + (RANDOM.nextDouble() * (MAX_PRODUCT_PRICE - MIN_PRODUCT_PRICE));
-                // Redondear a miles para mayor realismo comercial
-                double unitPrice = Math.round(rawPrice / 1000.0) * 1000.0;
+                long unitPrice = Math.round(rawPrice / 1000.0) * 1000L;
 
                 // Formato: IDProducto;NombreProducto;PrecioPorUnidadProducto
-                writer.write(productId + ";" + productName + ";" + String.format(java.util.Locale.US, "%.1f", unitPrice));
+                writer.write(productId + ";" + productName + ";" + unitPrice);
                 writer.newLine();
             }
         }

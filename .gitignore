@@ -1,12 +1,25 @@
-# Compiled Java class files
+# Archivos de clases compiladas
 *.class
 **/*.class
 
-# Generated output text files
-*.txt
-**/*.txt
+# Archivos de datos generados en ejecuciones de prueba
+products.txt
+salesmen_info.txt
+salesman_*.txt
+reporte_*.txt
+reporte.ser
+**/*.ser
 
-# IDE and editor files
+# Archivos comprimidos y de configuracion temporal
+*.zip
+*.pem
+*.crt
+*.csr
+*.json
+URL repositorio GitHub.txt
+oci_pki_vm_setup_guide.md
+
+# Archivos de configuracion de IDEs
 .idea/
 *.iml
 .vscode/
@@ -15,7 +28,7 @@
 .classpath
 bin/
 
-# OS generated files
+# Archivos de sistema operativo
 Thumbs.db
 [Dd]esktop.ini
 .DS_Store

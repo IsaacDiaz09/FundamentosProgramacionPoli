@@ -14,7 +14,7 @@ Hasta la presente Entrega 2 (Semana 5), se han implementado y verificado satisfa
   * Creación del registro de vendedores con tipo y número de documento, nombres y apellidos reales (`salesmen_info.txt`).
   * Creación de archivos individuales de ventas por vendedor (`salesman_<id>.txt`).
 
-* **Procesamiento de Datos y Generación de Reportes (`Main.java`)**:
+* **Procesamiento de Datos y Generación de Reportes (`main.java`)**:
   * Lectura y validación de los catálogos de productos y vendedores.
   * Consolidación y procesamiento de todos los archivos de ventas disponibles en la carpeta de trabajo.
   * Generación del reporte de vendedores ordenado de mayor a menor dinero recaudado (`reporte_vendedores.txt`).
@@ -44,3 +44,16 @@ Para dar cumplimiento total a la fase final del proyecto grupal (Entrega 3 y Sus
 3. **Preparación para la Sustentación Oral y Empaquetado Final**:
    * Verificación final de portabilidad e importación directa en el entorno de desarrollo Eclipse para Java Developers con Java 8.
    * Preparación de la sustentación técnica individual/grupal, explicando las decisiones de diseño, estructuras de datos empleadas y complejidad algorítmica de los ordenamientos.
+
+---
+
+## 3. Estado en la Entrega 3 (Semana 7)
+
+| Pendiente | Estado |
+|---|---|
+| Archivo `conslusion.txt` | ✅ Completado por ambos integrantes |
+| Proyecto Eclipse con Java 8 | ✅ `Semana7/` con `.project`, `.classpath` y nivel de compilación 1.8 |
+| Documentación Javadoc completa | ✅ Clases, constantes y métodos documentados |
+| Pruebas de casos borde | ✅ Probado con archivos vacíos, IDs inexistentes, cantidades y precios negativos, valores no numéricos y varios archivos por vendedor |
+| Pruebas de estrés con grandes volúmenes | ⏳ Opcional, no exigido por el enunciado |
+| Sustentación oral | ⏳ Semana 8 |

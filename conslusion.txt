@@ -1,0 +1,107 @@
+CONCLUSIONES DEL PROYECTO
+Modulo: Conceptos Fundamentales de Programacion - Politecnico Grancolombiano
+Proyecto: Generacion y Clasificacion de Datos
+
+==========================================================
+Julio Cesar Alvarado Ávila
+==========================================================
+
+1. Lo aprendido durante el desarrollo del proyecto
+
+Durante este proyecto reforce el diseno de metodos en Java con parametros y
+valores de retorno bien definidos (createProductsFile, createSalesManInfoFile,
+createSalesMenFile), y aprendi a leer y escribir archivos planos de texto
+usando BufferedReader y BufferedWriter, definiendo un formato simple de
+intercambio de datos (texto separado por punto y coma) entre dos programas
+independientes que no se comunican directamente entre si, sino a traves de
+archivos. Tambien aprendi a serializar objetos en Java con ObjectOutputStream
+como una forma alterna de persistir informacion, y a validar datos de entrada
+de manera defensiva (lineas mal formadas, IDs de producto inexistentes,
+cantidades o precios negativos) sin que el programa se detuviera por una
+excepcion no controlada. Por ultimo, usé Git y GitHub de forma practica como
+control de versiones y como medio de entrega del proyecto: crear
+repositorios, hacer commits y compartir el enlace del repositorio.
+
+2. Posibles aplicaciones en mi vida profesional
+
+Leer archivos de entrada, transformarlos y generar reportes es una tarea muy
+comun en roles de desarrollo backend, automatizacion de procesos y
+procesamiento de datos por lotes (batch processing); el ejercicio de este
+proyecto es, en esencia, una version simplificada de ese tipo de sistemas.
+La validacion de datos de entrada y el manejo de errores sin interrumpir la
+ejecucion es clave en sistemas reales, donde los datos casi nunca llegan
+perfectamente formateados. El uso de control de versiones (Git/GitHub) y el
+trabajo colaborativo en un repositorio compartido es una habilidad que se usa
+a diario en cualquier equipo de desarrollo de software profesional, y la
+costumbre de documentar el codigo (Javadoc) y mantener un estilo consistente
+facilita que otras personas del equipo puedan entender y continuar el
+trabajo.
+
+3. Dificultades presentadas durante el desarrollo
+
+La principal dificultad fue de coordinacion de equipo: cada integrante
+desarrollo su propia version de la clase GenerateInfoFiles de forma
+independiente, con nombres de archivos y convenciones distintas, por lo que
+tuvimos que ponernos de acuerdo sobre cual repositorio seria el oficial del
+grupo y adaptar la segunda clase (main) para que funcionara correctamente con
+los archivos generados por la version de mi companero. Tambien tuve
+dificultades tecnicas al intentar subir el proyecto a GitHub desde mi entorno
+de trabajo (fallos de autenticacion con herramientas de linea de comandos),
+por lo que tuve que crear los archivos directamente desde la interfaz web de
+GitHub. Finalmente, detectar y manejar correctamente todos los casos de datos
+incoherentes (lineas mal formadas, productos inexistentes, cantidades
+negativas) requirio pensar con cuidado en casos limite, mas alla del camino
+donde todos los datos llegan bien formados.
+
+
+==========================================================
+Isaac Diaz Perez
+==========================================================
+
+1. Lo aprendido durante el desarrollo del proyecto
+
+El proyecto me permitio aplicar en un caso concreto casi todos los temas del
+modulo: ciclos y condicionales para recorrer y validar cada linea de los
+archivos, metodos con una sola responsabilidad (cargar, procesar, ordenar y
+escribir), y colecciones estandar de Java como ArrayList y HashMap para
+acumular el dinero por vendedor y las unidades por producto sin conocer de
+antemano cuantos vendedores o archivos habria. Aprendi a ordenar listas de
+objetos con Collections.sort y un Comparator propio, y a modelar la
+informacion con clases pequenas (Product, SalesmanReport, ProductReport) en
+lugar de manejar todo con arreglos de cadenas. Tambien entendi la importancia
+de documentar el codigo con Javadoc (@param, @return, @throws) y de respetar
+la version de Java exigida (Java 8), compilando con --release 8 para no usar
+por accidente funciones de versiones mas nuevas.
+
+2. Posibles aplicaciones en mi vida profesional
+
+Gran parte del software empresarial consiste en leer datos de una fuente,
+validarlos, consolidarlos y generar reportes: conciliaciones, cierres de
+ventas, cargues masivos o integraciones entre sistemas que intercambian
+archivos planos. Este proyecto es una version pequena de ese flujo, y las
+practicas que aplicamos (no detener todo el proceso por una linea invalida,
+registrar los errores en un archivo aparte, separar el generador de datos de
+prueba del programa principal) son las mismas que se usan en procesos batch
+reales. Ademas, generar datos de prueba pseudoaleatorios pero coherentes es
+una habilidad util para probar cualquier sistema antes de usar datos reales,
+y trabajar con Git, commits descriptivos y un README claro es parte del dia
+a dia en cualquier equipo de desarrollo.
+
+3. Dificultades presentadas durante el desarrollo
+
+La primera dificultad fue interpretar el enunciado al pie de la letra: la
+segunda clase debe llamarse "main" en minuscula, lo que va contra la
+convencion de Java, y en el repositorio solo pueden existir dos clases con
+metodo main, por lo que tuve que conservar la version de la Entrega 1 como
+evidencia historica pero renombrando su metodo. Ese cambio de "Main" a "main"
+tambien fue un problema tecnico, porque Windows no distingue mayusculas de
+minusculas en los nombres de archivo y Git no detectaba el cambio si no se
+hacia explicitamente con "git mv". Otra dificultad fue integrar el trabajo
+de los dos integrantes, que habiamos usado nombres de archivos y formatos
+diferentes, y acordar un unico formato de entrada para que ambos programas
+se comunicaran correctamente. Por ultimo, pensar en todos los casos de datos
+incoherentes (archivos vacios, IDs inexistentes, cantidades o precios
+negativos) exigio probar el programa con archivos alterados a mano, ademas
+de los generados automaticamente.
+
+

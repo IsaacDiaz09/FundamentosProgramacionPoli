@@ -19,13 +19,10 @@ reporte.ser
 URL repositorio GitHub.txt
 oci_pki_vm_setup_guide.md
 
-# Archivos de configuracion de IDEs
+# Archivos de configuracion de IDEs (el proyecto Eclipse de Semana7 SI se versiona)
 .idea/
 *.iml
 .vscode/
-.settings/
-.project
-.classpath
 bin/
 
 # Archivos de sistema operativo

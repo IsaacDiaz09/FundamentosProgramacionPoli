@@ -290,13 +290,20 @@ public class GenerateInfoFiles {
     }
 
     /**
-     * Metodo principal que ejecuta la generacion completa de los archivos planos de prueba.
+     * Metodo que ejecuta la generacion completa de los archivos planos de prueba.
      * Requisito fundamental: no solicita informacion al usuario por consola.
      * Muestra un mensaje de finalizacion exitosa o un mensaje de error si ocurre un fallo.
      *
+     * NOTA: este metodo ya NO se llama "main" ni es el punto de entrada de la
+     * clase. Se renombro para que el repositorio final tenga exactamente las
+     * dos (y solo dos) clases con metodo main que exige el enunciado:
+     * Semana7/src/GenerateInfoFiles.java y Semana7/src/main.java. Este archivo se
+     * conserva como evidencia de la Entrega 1 (Semana 3), pero la version
+     * vigente del proyecto es la de Semana7.
+     *
      * @param args Argumentos de la linea de comandos (no requeridos).
      */
-    public static void main(String[] args) {
+    public static void demoEntrega1(String[] args) {
         try {
             System.out.println("Iniciando la generacion de archivos de prueba (Semana 3 - Entrega 1)...");
 

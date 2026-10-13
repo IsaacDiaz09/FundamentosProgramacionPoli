@@ -186,7 +186,15 @@ public class GenerateInfoFiles {
         return list;
     }
 
-    public static void main(String[] args) {
+    /**
+     * Version historica de la Entrega 2 (Semana 5). Este metodo ya NO se llama
+     * "main": se renombro para que el repositorio tenga exactamente las dos (y
+     * solo dos) clases con metodo main que exige el enunciado, ubicadas en
+     * Semana7/src/. La version vigente del proyecto es la de Semana7.
+     *
+     * @param args argumentos de linea de comandos (no se usan)
+     */
+    public static void demoEntrega2(String[] args) {
         try {
             System.out.println("Generating test files...");
 
